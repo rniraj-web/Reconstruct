@@ -33,7 +33,7 @@ app.use('/api/v1/product', productRoutes)
 
 // create rest apis
 app.get('*', function(req,res){
-    res.sendFile(path.join(__dirname, '../../build', 'index.html'))
+    res.sendFile(path.resolve(__dirname, '../../build', 'index.html'))
 })
 
 // create a port for a node server
